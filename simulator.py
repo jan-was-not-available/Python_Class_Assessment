@@ -13,12 +13,12 @@ while True:
     system("clear")
 
     if command.lower() == "charge":
-        amount = input("How much to charge? ")
-        print(robot.charge(amount))
+        print("How much to charge? ")
+        print(robot.battery + int(input()))
 
     elif command.lower() == "work":
         hours = input("How many hours to work? ")
-        print(robot.work(hours))
+        print (name + " has worked " + hours + " hours")
 
     elif command.lower() == "repair":
         print(robot.repair())
